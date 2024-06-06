@@ -2,6 +2,7 @@ package com.sda.cargo_project.models;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 @Table(name = "cargo_assignments")
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class CargoAssignment {
 
     @Id
@@ -27,9 +29,7 @@ public class CargoAssignment {
     private LocalDateTime assignmentDate;
 
     // Constructors
-    public CargoAssignment() {
-        this.assignmentDate = LocalDateTime.now();
-    }
+
 
     // Getters and Setters
 }

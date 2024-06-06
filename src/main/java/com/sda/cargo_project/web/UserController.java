@@ -3,7 +3,7 @@ package com.sda.cargo_project.web;
 import java.util.List;
 import java.util.Optional;
 
-import dto.Login;
+import com.sda.cargo_project.dto.Login;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
