@@ -1,5 +1,6 @@
 package com.sda.cargo_project.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -37,5 +38,8 @@ public class UserService {
     // Delete User by ID
     public void deleteUserById(int id) {
         userRepo.deleteById(id);
+    }
+    public List<User> getUsersByRole(String role) {
+        return userRepo.findByRole(role);
     }
 }
